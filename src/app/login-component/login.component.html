@@ -1,0 +1,27 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Formulario de inicio de sesión</ion-card-title>
+    <ion-card-subtitle>Ingresa tus datos</ion-card-subtitle>
+  </ion-card-header>
+
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <!-- MAIL -->
+    <ion-item class="ion-padding">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input formControlName="mailInput" type="email" placeholder="Correo electrónico" required></ion-input>
+    </ion-item>
+
+    <!-- PASSWORD -->
+    <ion-item class="ion-padding">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input formControlName="passwordInput" type="password" placeholder="Contraseña" required></ion-input>
+    </ion-item>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-button type="submit">Ingresar</ion-button>
+      <ion-button (click) = goToRegister()>Registrarse</ion-button>
+    </ion-row>
+  </form>
+
+
+</ion-card>

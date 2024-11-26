@@ -1,0 +1,78 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">PROFILE</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid>
+    <ion-row class="center">
+      <!-- first card -->
+      <ion-col [size]="12" [sizeMd]="8" [sizeLg]="6">
+        <ion-card class="profile-card">
+          <img alt="Profile Pic" src="https://imgv3.fotor.com/images/blog-cover-image/10-profile-picture-ideas-to-make-you-stand-out.jpg" />
+          <ion-card-header>
+            <ion-card-title>{{items.username}}</ion-card-title>
+            <ion-card-subtitle>{{items.mail}}</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+      <ion-col [size]="12" [sizeMd]="8" [sizeLg]="6">
+        <ion-card class="api-card-1" (click) = showRecepyAlert()>
+          <ion-card-header>
+            <ion-card-title>API THE MEAL</ion-card-title>
+            <ion-card-subtitle>Una base de datos abierta y colaborativa de recetas de todo el mundo.</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            En este caso utilizaremos el endpoint para obtener una receta random: https://www.themealdb.com/api/json/v1/1/random.php.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col [size]="12" [sizeMd]="8" [sizeLg]="6">
+        <ion-card class="api-card-2" (click) = showUserAlert()>
+          <ion-card-header>
+            <ion-card-title>API JSONPLACEHOLDER</ion-card-title>
+            <ion-card-subtitle>API gratuita y confiable para pruebas y creación de prototipos.</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            En este caso estaremos utilizando el endpoint para obtener un usuario random: https://jsonplaceholder.typicode.com/users.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      
+      
+
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-row class="ion-justify-content-center">
+    <ion-button fill="clear" class="logout-btn" (click) = logout() >Cerrar sesión</ion-button>
+  </ion-row>
+  
+</ion-content>
+
+<!-- FOOTER -->
+<ion-footer>
+  <ion-toolbar>
+    <ion-title class="ion-text-center"> Mi primera app móvil </ion-title>
+  </ion-toolbar>
+</ion-footer>
+
+
+

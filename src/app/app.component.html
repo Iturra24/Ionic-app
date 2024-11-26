@@ -1,0 +1,47 @@
+<ion-app>
+  <!-- MENU DESPLEGABLE -->
+  <ion-menu contentId="main-content" id="main-menu" >
+    <ion-header>
+    <!-- TITULO LISTADO -->
+      <ion-toolbar >
+        <ion-title>Categorías</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <!-- LISTADO -->
+    <ion-col class="no-padding">
+      <ion-list>
+        <ion-item *ngIf=getAuth() (click) = goToProfile()>
+          <ion-label>Perfil</ion-label>
+        </ion-item>
+        <ion-item (click) = goToIndex()>
+          <ion-label>Inicio</ion-label>
+        </ion-item>
+        <ion-item (click) = goToLogin()>
+          <ion-label>Iniciar Sesión</ion-label>
+        </ion-item>
+        <ion-item (click) = goToRegister()>
+          <ion-label>Registrarse</ion-label>
+        </ion-item>
+        <ion-item (click) = goToShooters()>
+          <ion-label>Juegos Shooter</ion-label>
+        </ion-item>
+        <ion-item (click) = goToAdventures()>
+          <ion-label>Juegos de Aventuras</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Juegos de Deportes</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Juegos de Estrategia</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-menu>
+
+  <!-- CONTENIDO DE LA PAGINA -->
+  <ion-router-outlet id="main-content"></ion-router-outlet>
+
+</ion-app>
+
+
+

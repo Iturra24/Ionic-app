@@ -1,0 +1,37 @@
+ion-content{
+    --background: #ffffff;
+  
+}
+
+.logout-btn{
+  background-color: red;
+  border-radius: 15px;
+  color: white;
+}
+
+/* CARDS */
+.api-card-1 {
+  --background: #c1fff8;
+  --color: #031512;
+  
+  ion-card-title {
+    --color: #00473d;
+  }
+  
+  ion-card-subtitle{
+    --color: #12211f;
+  }
+}
+
+.api-card-2 {
+  --background: #ffbaec;
+  --color: #29001e;
+  
+  ion-card-title{
+    --color: #000000;
+  }
+  
+  ion-card-subtitle{
+    --color: #4d1d3f;
+  }
+}

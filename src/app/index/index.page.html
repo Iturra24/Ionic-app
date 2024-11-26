@@ -1,0 +1,80 @@
+<!-- HEADER & BOTÓN DE MENU -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-row>
+      <ion-title> Inicio </ion-title>
+      <ion-title class="user-mail"><b>{{userData?.mailInput}}</b></ion-title>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<!-- CONTENIDO DE LA PAGINA -->
+
+<ion-content class="ion-padding">
+
+  <h1><b>YouGames</b></h1>
+  <p class="ion-padding">YouGames es tu destino definitivo para videojuegos digitales. Ofrecemos una extensa colección de títulos para todos los gustos y plataformas, con precios irresistibles, ofertas exclusivas y una experiencia de compra rápida y segura, YouGames transforma tu forma de jugar.</p>
+  <h3>¡Explora, compra y juega sin límites!</h3>
+
+  <ion-grid>
+    <ion-row class="center">
+
+      <ion-col [size]="12" [sizeMd]="8" [sizeLg]="6">
+        <ion-card #card (click) = goToShooters()>
+          <ion-img src="assets/img/accion.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Shooter</ion-card-title>
+          </ion-card-header>            
+          <ion-card-content>
+            Los mejores shooters, FPS, tercera persona, etc.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col [size]="12" [sizeMd]="8" [sizeLg]="6">
+        <ion-card #card (click) = goToAdventures()>
+          <ion-img src="assets/img/aventura.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Aventuras</ion-card-title>
+          </ion-card-header>            
+          <ion-card-content>
+            Aventuras para todas las edades!
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col [size]="12" [sizeMd]="8" [sizeLg]="6">
+        <ion-card #card>
+          <ion-img src="assets/img/deportes.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Deportes</ion-card-title>
+          </ion-card-header>            
+          <ion-card-content>
+            FIFA, XGAMES, NBA, Tennis y mucho más!
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col [size]="12" [sizeMd]="8" [sizeLg]="6">
+        <ion-card #card>
+          <ion-img src="assets/img/estrategia.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Estrategia</ion-card-title>
+          </ion-card-header>            
+          <ion-card-content>
+            RPG, Plataformas, PVP, Estrategias!
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+  
+
+
+

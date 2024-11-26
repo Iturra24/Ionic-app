@@ -1,0 +1,48 @@
+/* VARS */
+$colors:(
+  background-color: #f0f0f0,
+  primary: #9efff0,
+  secondary: #d1fff8,
+);
+
+
+ion-card{
+    --background: #f0f0f0;
+    max-width: 700px;
+    width: 100%;
+    /* --width: 100%; */
+
+    ion-card-header{
+        --background: #0c0404;
+
+        ion-card-title{
+            --color: #9efff0;
+        }
+
+        ion-card-subtitle{
+            --color: #d1fff8;
+        }
+    }
+
+    ion-item{
+        --background: #f0f0f0;
+        --color: #0c0404;
+
+        ion-label{
+            --padding: 0.5rem;
+        }
+
+    }
+    
+}
+
+
+ion-button{
+    border-radius: 5px;
+    /* --background:#0c0404; */
+    --color: #834141;
+}
+
+
+
+
